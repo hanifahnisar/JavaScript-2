@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Picker_Hanisa</title>
+	<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("list").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Apakah yakin ini pilihan anda?");
+	}
+</script>
+</head>
+<body style="background-size: cover; margin: 150px"background="Backgound laut-00.jpg">
+	<center><h1 style="background-color: white">WELCOME TO THE SEA WORLD</h1></center>
+	<center>
+		<fieldset style="background-color: #bcbbb1">
+		<select onchange="gantigambar();" id="list">
+			<option>Pilih Hewan Anda</option>
+			<option value="https://cdnwpseller.gramedia.net/wp-content/uploads/2023/02/Nama-hewan-di-laut-2.png">Lumba-lumba</option>
+			<option value="https://cdnwpseller.gramedia.net/wp-content/uploads/2023/02/Nama-hewan-di-laut-3.png">Penyu</option>
+			<option value="https://www.gotravelly.com/blog/wp-content/uploads/2022/12/ikan-pari.jpg">Ikan Pari</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/methode-times-prod-web-bin-8985aab6-3005-11ea-83aa-e8f0eae9d133-456c2eabc9b00081d13a9213914932fe.jpg">Hiu Putih Besar</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2022/04/gabor-szuts-mkkrn7p2jos-unsplash-045ba5bbac6b3b41dd071194b9b84460-52b833a2d5e9bac797a2a6e11adfa271.jpg">Ikan Blue Tang</option>
+		</select>
+	</fieldset>
+	</center>
+	<br>
+	<center><img src="icon seaworld-003.png" style="width: 350px;" id="gambar"></center>
+</body>
+</html>
